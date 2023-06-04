@@ -56,7 +56,8 @@ def searchCopainsdavant(nom, city):
 
 	for name in nameList:
 		name = name.find("a")
-		namesList2.append(name.string)
+		if name:
+			namesList2.append(name.string)
 	for addr in addresseList:
 		addressesList2.append(addr.string.strip())
 	for date in birthdayList:
